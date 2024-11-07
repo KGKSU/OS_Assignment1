@@ -16,6 +16,7 @@ int main(int argc, char** argv){
                 break;
             }
         }
+        sleep(1);
         sem_post(&sharedMemoryPointer->flag);
     }
 }
